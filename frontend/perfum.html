@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Perfume </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Roboto;
+            text-decoration: none;
+        }
+
+        /* Scroll Section */
+        .scroll-container {
+            width: 100%;
+            position: relative;
+        }
+
+        .scroll-image {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            filter: brightness(0.6);
+        }
+
+        .scroll-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 5;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .scroll-title {
+            color: white;
+            font-size: 2rem;
+            font-weight: 500;
+            text-transform: capitalize;
+            text-align: center;
+        }
+
+        .scroll-desc {
+            color: lightgray;
+            font-size: 1rem;
+            font-weight: 300;
+            text-align: center;
+        }
+
+        .linkw, .link {
+            color: lightgray;
+            font-size: 1rem;
+            font-weight: 300;
+            text-align: center;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        /* Link container to align links horizontally */
+        .links-container {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem; /* Space between the links */
+            margin-top: 200px;
+        }
+
+        /* 2x2 Card Section */
+        .card-section {
+            padding: 3rem 2rem;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        .card-title {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #333333;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: white;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            border-radius: 15px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px; /* Slightly larger images */
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            font-size: 1.8rem;
+            margin: 1rem 0;
+            color: #444444;
+        }
+
+        .card p {
+            font-size: 1rem;
+            color: #666666;
+        }
+    </style>
+</head>
+<body>
+    <!-- Main Content with Image -->
+    <div class="scroll-container">
+        <img class="scroll-image" src="https://images.pexels.com/photos/8717523/pexels-photo-8717523.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Fixed Image">
+        <div class="scroll-content">
+            <h3 class="scroll-title">P E R F U M E S</h3>
+            <p class="scroll-desc">"The Perfume Is What They Remember"</p>
+            <div class="links-container">
+                <h4 class="linkw" onclick="window.location.href='http://127.0.0.1:5501/frontend/mens.html'">M E N S / </h4>
+                <h4 class="link" onclick="window.location.href='http://127.0.0.1:5501/frontend/womens.html'">W O M E N S</h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2x2 Card Section -->
+    <section class="card-section">
+        <h2 class="card-title">Brands</h2>
+        <div class="card-container">
+            <!-- Card 1 -->
+            <a href="http://127.0.0.1:5501/frontend/lacost.html" class="card">
+                <img src="https://i.pinimg.com/736x/31/7a/0b/317a0bd4815c1050c265c241357e51c9.jpg" alt="Lacoste">
+                <h3>Lacoste</h3>
+            </a>
+    
+            <!-- Card 2 -->
+            <a href="http://127.0.0.1:5501/frontend/gucci.html" class="card">
+                <img src="https://wallpapercave.com/wp/UO4DqMI.jpg" alt="Gucci">
+                <h3>Gucci</h3>
+            </a>
+    
+            <!-- Card 3 -->
+            <a href="https://www.jeanpaulgaultier.com/ww/en/fragrances" class="card">
+                <img src="https://splashfragrance.in/wp-content/uploads/2018/12/logo-jean-paul-gaultier-png-5.png" alt="Jean-Paul Gaultier">
+                <h3>Jean-Paul Gaultier</h3>
+            </a>
+    
+            <!-- Card 4 -->
+            <a href="http://127.0.0.1:5501/frontend/hugo.html" class="card">
+                <img src="https://w0.peakpx.com/wallpaper/854/953/HD-wallpaper-hugo-boss-brand-logo.jpg" alt="Hugo Boss">
+                <h3>Hugo Boss</h3>
+            </a>
+    
+            <!-- Card 5 -->
+            <a href="http://127.0.0.1:5501/frontend/dior.html" class="card">
+                <img src="https://wallpapers.com/images/hd/dior-background-fogj3szr6zrmi35v.jpg" alt="Dior">
+                <h3>Dior</h3>
+            </a>
+    
+            <!-- Card 6 -->
+            <a href="http://127.0.0.1:5501/frontend/armani.html" class="card">
+                <img src="https://i.pinimg.com/originals/72/71/05/72710563953e389873dcc394aadd1f7e.jpg" alt="Armani">
+                <h3>Armani</h3>
+            </a>
+    
+            <!-- Card 7 -->
+            <a href="http://127.0.0.1:5501/frontend/chanel.html" class="card">
+                <img src="https://wallpapers.com/images/featured/chanel-logo-background-3xtmxatyvmxy3wv1.jpg" alt="Chanel">
+                <h3>Chanel</h3>
+            </a>
+    
+            <!-- Card 8 -->
+            <a href="http://127.0.0.1:5501/frontend/calvinklein.html" class="card">
+                <img src="https://w0.peakpx.com/wallpaper/926/182/HD-wallpaper-calvinklein-calvin-klein-logo.jpg" alt="Calvin Klein">
+                <h3>Calvin Klein</h3>
+            </a>
+    
+            <!-- Card 9 -->
+            <a href="http://127.0.0.1:5501/frontend/prada.html" class="card">
+                <img src="https://wallpapers.com/images/hd/prada-background-103h284jhr2gh55m.jpg" alt="Prada">
+                <h3>Prada</h3>
+            </a>
+        </div>
+    </section>
+    
+    <!-- Optional JavaScript to scroll -->
+    <script>
+        $(function() {
+            $('.scroll-down').click(function() {
+                $('html, body').animate({scrollTop: $('section.ok').offset().top}, 'slow');
+                return false;
+            });
+        });
+    </script>
+</body>
+</html>

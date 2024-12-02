@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe Example</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #ffffff;  /* Clean white background for premium feel */
+            padding: 0;
+            margin: 0;
+            height: 100vh;  /* Ensure full height of the viewport */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;  /* Prevent scrolling */
+            position: fixed;  /* Fix the body to the viewport */
+            width: 100%;
+        }
+
+        /* Container for content */
+        .content-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 40px;
+        }
+
+        /* Styling for the iframe container */
+        .iframe-container {
+            width: 100%;
+            max-width: 900px;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #ffffff;  /* Pure white background */
+            border-radius: 12px;
+            text-align: center;
+            /* Subtle border for refinement */
+            transition: transform 0.3s ease-in-out;
+            position: relative;
+        }
+
+        /* Hover effect for iframe container */
+        .iframe-container:hover {
+            transform: translateY(-5px);  /* Slight hover effect */
+        }
+
+        /* Style for iframe to make it responsive */
+        iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+            border-radius: 10px;
+            background-color: #ffffff;
+        }
+
+        /* Styling for the Add to Cart button */
+        .add-to-cart-btn {
+            margin-top: 5px;
+    padding: 16px 32px;
+   
+    
+    text-transform: uppercase;
+    background-color: #2C3E50;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: x-small;
+        }
+
+        /* Hover effect for Add to Cart button */
+        .add-to-cart-btn:hover {
+            background-color: #34495E;  /* Slightly lighter dark color on hover */
+            transform: scale(1.05);  /* Button enlargement for better focus */
+        }
+
+        /* Focus effect for Add to Cart button */
+        .add-to-cart-btn:focus {
+            outline: none;
+            box-shadow: 0 0 0 4px rgba(44, 62, 80, 0.3);
+        }
+
+        /* Styling for the heading */
+        h2 {
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: #2C3E50;  /* Dark text for a professional look */
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="content-container">
+        <!-- Container for iframe -->
+        <div class="iframe-container">
+            <h2>Explore Our Collection</h2>
+            <!-- Embed iframe here (example: embedding a 3D model or other interactive content) -->
+            <iframe src="https://my.spline.design/untitled-bd1976dee56adbf271450b063aeb2e95/" title="Embedded Content"></iframe>
+
+            <!-- Add to Cart button -->
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+
+</body>
+</html>
